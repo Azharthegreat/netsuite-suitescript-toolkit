@@ -1,0 +1,30 @@
+<mapreducescript scriptid="customscript_tk_mr_suiteql">
+  <name>Toolkit | Map/Reduce SuiteQL Template</name>
+  <scriptfile>[/SuiteScripts/toolkit/tk_mr_suiteql_template.js]</scriptfile>
+  <description>Marks customers with no recent transactions inactive. Runs as a dry run until the parameter is unchecked.</description>
+  <isinactive>F</isinactive>
+  <notifyowner>T</notifyowner>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_tk_mr_years">
+      <fieldtype>INTEGER</fieldtype>
+      <label>Years without activity</label>
+      <defaultvalue>3</defaultvalue>
+      <ismandatory>F</ismandatory>
+      <description>Customers with no transactions in this many years are selected.</description>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_tk_mr_dry_run">
+      <fieldtype>CHECKBOX</fieldtype>
+      <label>Dry run (log only)</label>
+      <defaultchecked>T</defaultchecked>
+      <description>While checked, the script only logs what it would change.</description>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_tk_mr_suiteql">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Toolkit | Map/Reduce SuiteQL Template</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

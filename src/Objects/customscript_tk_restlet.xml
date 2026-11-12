@@ -1,0 +1,15 @@
+<restlet scriptid="customscript_tk_restlet">
+  <name>Toolkit | RESTlet Template</name>
+  <scriptfile>[/SuiteScripts/toolkit/tk_restlet_template.js]</scriptfile>
+  <description>Customer lookup and comment RESTlet with validation and a consistent JSON envelope.</description>
+  <isinactive>F</isinactive>
+  <notifyowner>T</notifyowner>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_tk_restlet">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>TESTING</status>
+      <title>Toolkit | RESTlet Template</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>
